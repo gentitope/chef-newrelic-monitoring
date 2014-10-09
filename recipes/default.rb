@@ -43,10 +43,10 @@ when 'ubuntu', 'debian'
 when "redhat", "centos", "fedora"
 
   # step 1
-  repo_rpm = "http://download.newrelic.com/pub/newrelic/el5/i386/newrelic-repo-5-3.noarch.rpm"
+  repo_rpm = "http://download.newrelic.com/pub/newrelic/el5/x86_64/newrelic-repo-5-3.noarch.rpm"
 
   remote_file "#{Chef::Config[:file_cache_path]}/#{repo_rpm}" do
-    source "http://download.newrelic.com/pub/newrelic/el5/i386/#{repo_rpm}"
+    source "http://download.newrelic.com/pub/newrelic/el5/x86_64/#{repo_rpm}"
     mode 0644
   end
 
