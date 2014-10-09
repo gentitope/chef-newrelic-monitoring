@@ -1,5 +1,5 @@
-maintainer       "Ry4an Brase"
-maintainer_email "rbrase-opscode@ry4an.org"
+maintainer       "Temitope Oteyowo"
+maintainer_email "temitope.oteyowo@konga.com"
 license          "Apache 2.0"
 description      "Installs/Configures New Relic Monitoring "
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
