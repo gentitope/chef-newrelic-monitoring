@@ -69,6 +69,6 @@ when "redhat", "centos", "fedora"
   end
 
   # step 4
-  service "newrelic-sysmond" do
-  action [:enable, :start]
+  #service "newrelic-sysmond" do
+  #action [:enable, :start]
   end
