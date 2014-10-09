@@ -65,7 +65,7 @@ end
 
 # step 3
 execute "nrsysmond-config" do
-  command "nrsysmond-config --set license_key=#{node[:newrelic][:05737f3e8a99cf75de62acbb36ffc75ad3019a62]}"
+  command "nrsysmond-config --set license_key='05737f3e8a99cf75de62acbb36ffc75ad3019a62"
   action :run
 end
 
