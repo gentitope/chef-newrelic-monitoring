@@ -61,16 +61,14 @@ when "redhat", "centos", "fedora"
     action :upgrade
   end
 
-end
 
-# step 3
-execute "nrsysmond-config" do
+  # step 3
+  execute "nrsysmond-config" do
   command "nrsysmond-config --set license_key=#{node[:newrelic][:05737f3e8a99cf75de62acbb36ffc75ad3019a62]}"
   action :run
-end
+  end
 
-# step 4
-service "newrelic-sysmond" do
-  supports :restart => true, :status => true
-  action [:enable, :start]  
-end
+  # step 4
+  service "newrelic-sysmond" do
+  action [:enable, :start]
+  end
