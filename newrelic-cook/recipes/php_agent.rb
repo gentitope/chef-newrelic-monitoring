@@ -5,7 +5,8 @@
 # Copyright 2012-2014, Escape Studios
 #
 
-include_recipe 'newrelic::repository'
+#include_recipe 'newrelic::repository'
+nclude_recipe 'apache2::service'
 
 license = node['newrelic']['application_monitoring']['license']
 
